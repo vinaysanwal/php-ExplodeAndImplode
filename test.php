@@ -49,5 +49,16 @@
     print '<pre>';
     print_r($out);
     print '</pre>';
+
+    function get_data() {
+      echo "calling the function !<br />";
+      return array (
+        'firstname' => 'vinay',
+        'lastname' => 'sanwal',
+       );
+    }
+    foreach (get_data() as $key => $value) {
+      echo "$key : $value<br />";
+    }
 */
 ?>
